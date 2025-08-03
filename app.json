@@ -1,33 +1,61 @@
 {
   "expo": {
-    "name": "cinnamon_master",
+    "name": "CinnamonMaster",
     "slug": "cinnamon_master",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/logo/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cinnamon2.master",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "මෙම ඇප් එකට ඔබේ ඡායාරූප පුස්තකාලයට ප්‍රවේශ වීමට අවසර දෙන්න."
+      },
+      "config": {
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/logo/logo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cinnamon2.master",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ],
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/logo/logo.png"
     },
     "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "මෙම ඇප් එකට ඔබේ ඡායාරූප පුස්තකාලයට ප්‍රවේශ වීමට අවසර දෙන්න."
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "androidClientId": "824998733194-e2il29nj8qeu6e4oi1mqpv6ab2fc57iq.apps.googleusercontent.com",
+          "iosClientId": "824998733194-xxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "webClientId": "824998733194-l7gimd0ku97b19msqdo8ni4chqeb1e.apps.googleusercontent.com",
+          "iosUrlScheme": "com.googleusercontent.apps.824998733194-l7gimd0ku97b19msqdo8ni4chqeb1e"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/logo/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -36,6 +64,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4ab78e40-6c64-4176-8cd4-5601e38c5771"
+      }
+    },
+    "owner": "udara380"
   }
 }

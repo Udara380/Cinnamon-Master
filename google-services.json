@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "824998733194",
+    "project_id": "cinnamon-master-f67bb",
+    "storage_bucket": "cinnamon-master-f67bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824998733194:android:f9fb062d6410f4ee24d473",
+        "android_client_info": {
+          "package_name": "com.cinnamon2.master"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824998733194-e2il29nj8qeu6e4oi1mqpv6ab2fc57iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cinnamon2.master",
+            "certificate_hash": "db80d883b7ac099c294c712e5b9c477d863410b6"
+          }
+        },
+        {
+          "client_id": "824998733194-l7gimd0ku97b19msqdo8ni3f4chqeb1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfdkGA4qBDh1dFkJ0sL70_lIwICtQJvds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824998733194-gfv7c2g795s0kbe5thqatvn3ctq0rd1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
